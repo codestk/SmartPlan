@@ -1,0 +1,8 @@
+﻿<Project>
+  <PropertyGroup>
+    <Site Server="sc82u2.local" UserName="sitecore\admin" IsRemoteSitecore="False" />
+  </PropertyGroup>
+  <File Include="Controllers\ControllerAction1.cs" FileTimestamp="0" FileSize="0" ServerTimestamp="0" ServerFileSize="0">
+    <Item DatabaseName="master">{14F8B7EE-A1D1-43F5-A3C9-BA7DEF5F39FF}</Item>
+  </File>
+</Project>

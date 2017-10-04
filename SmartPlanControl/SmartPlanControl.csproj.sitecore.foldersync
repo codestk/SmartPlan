@@ -1,0 +1,7 @@
+﻿<Project>
+  <FolderSync SynchronizeProjectOutputFolderOnBuild="False">
+    <Folder SourceFolder="Views\Components\" DestinationFolder="Views\Components\" Mode="Copy" Pattern="*.*" />
+    <Folder SourceFolder="Views\Components\SmartPlan\" DestinationFolder="Views\Features\SmartPlan\" Mode="Copy" Pattern="*.*" />
+    <Folder SourceFolder="Views\Features\SmartPlan\" DestinationFolder="Views\Features\SmartPlan\" Mode="Copy" Pattern="*.*" />
+  </FolderSync>
+</Project>
