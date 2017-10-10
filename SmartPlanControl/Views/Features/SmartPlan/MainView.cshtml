@@ -1,0 +1,258 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+
+}
+
+
+<link href="~/Content/Features/SmartPlan/ProgressIndicator.css" rel="stylesheet" />
+<link href="~/Content/Features/SmartPlan/SmartPlan.css" rel="stylesheet" />
+@*<link href="~/Content/Features/SmartPlan/SmartPlan.css" rel="stylesheet" />*@
+ 
+@*<section class="container">
+
+    <ul class="SteppedProgress">
+        <li class="complete">
+            <span>
+                ข้อมูลส่วนบุคคล
+            </span>
+        </li>
+        <li class="complete">
+            <span>
+                ข้อมูลทางการเงิน
+            </span>
+        </li>
+        <li class="complete">
+            <span>
+                วิเคราะห์สุขภาพทางการเงิน
+            </span>
+        </li>
+        <li class="complete">
+            <span>
+                วิเคราะห์สุขภาพทางการเงิน
+            </span>
+        </li>
+
+        <li class="complete">
+            <span>
+                วิเคราะห์สุขภาพทางการเงิน
+            </span>
+        </li>
+    </ul>
+
+    <div id="Step1">
+
+        <h1 class="text-center"><a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a> @Sitecore.Globalization.Translate.TextByDomain("Features", "SmartPlan.SmartPlanMainView.Step1Title") </h1>
+    </div>
+    <div id="Step2"></div>
+    <div id="Step3"></div>
+    <div id="Step4"></div>
+    <div id="Step5"></div>
+</section>*@
+
+<div class="wrapper bgd-dark-blue pad-top-lg pad-bot">
+    <article data-tab="" class="tab-scrolling-x">
+        <div class="inner-container">
+            <div class="center-content">
+                <ul data-tab-header="" class="tab-header financial-plan">
+                    <li>
+                        <a href="#saving-goals" title="Saving Goals" class="active"><span class="visual-img"><img src="images/icons/ico-saving-goals.svg" alt="Saving Goals"></span><span class="text">Saving Goals</span></a>
+                    </li>
+                    <li>
+                        <a href="#retirement-plan" title="Retirement Plan" class=""><span class="visual-img"><img src="images/icons/ico-retirement.svg" alt="Retirement Plan"></span><span class="text">Retirement Plan</span></a>
+                    </li>
+                    <li>
+                        <a href="#child-education-plan" title="Child’s Education Plan"><span class="visual-img"><img src="images/icons/ico-education-plan.svg" alt="Child’s Education Plan"></span><span class="text">Child’s Education Plan</span></a>
+                    </li>
+                    <li>
+                        <a href="#tax-planning" title="Tax Planning"><span class="visual-img"><img src="images/icons/ico-tax-planning.svg" alt="Tax Planning"></span><span class="text">Tax Planning</span></a>
+                    </li>
+                    <li>
+                        <a href="#home-loan" title="Home Loan"><span class="visual-img"><img src="images/icons/ico-home-loan.svg" alt="Home Loan"></span><span class="text">Home Loan</span></a>
+                    </li>
+                </ul>
+
+                <ul class="SteppedProgress    ">
+                    <li class="complete">
+                        <span class="text">
+                            ข้อมูลส่วนบุคคล
+                        </span>
+                    </li>
+                    <li class="complete">
+                        <span class="text">
+                            ข้อมูลทางการเงิน
+                        </span>
+                    </li>
+                    <li class="complete">
+                        <span class="text">
+                            วิเคราะห์สุขภาพทางการเงิน
+                        </span>
+                    </li>
+                    <li class="complete">
+                        <span class="text">
+                            วิเคราะห์สุขภาพทางการเงิน
+                        </span>
+                    </li>
+
+                    <li class="">
+                        <span class="text">
+                            วิเคราะห์สุขภาพทางการเงิน
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <section data-tab-content="">
+            <div id="saving-goals" class="inner active">
+                <div class="inner-container">
+                    <div   class="general-form">
+                        <div class="text-center">
+                            <h2 class="title-1 small text-white pad-bot">กรอกข้อมูล เพื่อเริ่มต้นวางแผนทางการเงินเฉพาะคุณ</h2>
+                       
+                            <h2 class="title-1 small text-white pad-bot">What are you saving for?</h2>
+                         </div>
+
+
+                    
+
+
+                        @*<div class="form-group required-field">
+                                <div class="radio none-bgd">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <label class="active">
+                                                        <input type="radio" name="rad-radio" id="rad-saving-1">Home
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="">
+                                                        <input type="radio" name="rad-radio" id="rad-saving-2">Car
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="">
+                                                        <input type="radio" name="rad-radio" id="rad-saving-2">Marriage
+                                                    </label>
+                                                </td>
+                                                <td>
+                                                    <label class="">
+                                                        <input type="radio" name="rad-radio" id="rad-saving-4">Others
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>*@
+                        <div class="form-group required-field">
+                            <input type="text" name="input-target" id="input-target" placeholder="ชื่อ" class="form-control label-up label-up-left none-bgd">
+                        </div>
+                        <div class="form-group required-field">
+                            <input type="text" name="input-how-many-year" id="input-how-many-year" placeholder="นามสกุล" class="form-control label-up label-up-left none-bgd">
+                        </div>
+                       @*<div class="form-group required-field">
+                                <input type="number" name="input-saving" id="input-saving" placeholder="saving already on hand" class="form-control label-up none-bgd">
+                            </div>
+                            <div class="form-group required-field">
+                                <input type="number" name="input-expected-return" id="input-expected-return" placeholder="expected annual return (%)" class="form-control label-up none-bgd">
+                            </div>*@ 
+                        <div class="form-submit-border">
+                            <button type="submit" name="convert-btn" id="convert-btn" title="Calculate" class="btn-white">
+                                ถัดไป
+                            </button>
+                        </div>
+
+
+
+
+                    </div>
+                </div>
+                <div data-financial-result="" class="result hide">
+                    <div class="inner">
+                        <p class="result-text">You will need to save<strong data-plan-save-amount="">8,944 Baht</strong>per month. For the next<strong data-plan-year="">5 year(s)</strong>to reach your target of<strong data-plan-target="">579,638* Baht.</strong></p>
+                        <p data-inflation="" class="text-x-small">including inflation 3%</p>
+                    </div>
+                </div>
+            </div>
+            <div id="retirement-plan" class="inner">
+                <div class="inner-container">
+                    <form action="#" method="" class="general-form">
+                        <div class="text-center">
+                            <h2 class="title-1 small text-white pad-bot">Your Details</h2>
+                        </div>
+                        <div class="form-group required-field">
+                            <input type="number" name="input-target" id="input-target" placeholder="YOUR CURRENT AGE" class="form-control label-up none-bgd">
+                        </div>
+                        <div class="form-group required-field">
+                            <input type="number" name="input-target" id="input-target" placeholder="RETIREMENT AGE" class="form-control label-up none-bgd">
+                        </div>
+                        <div class="form-group required-field">
+                            <input type="number" name="input-target" id="input-target" placeholder="THE AGE YOU WILL LIVE TOO" class="form-control label-up none-bgd">
+                        </div>
+                        <div class="text-center">
+                            <h2 class="title-1 small text-white pad-top pad-bot">Your Saving Details</h2>
+                        </div>
+                        <div class="form-group required-field">
+                            <div class="form-unit">
+                                <span class="saving-unit">Baht</span>
+                                <div class="input-wrap">
+                                    <input type="number" name="input-target" id="input-target" placeholder="MONTHLY GOALS" class="label-up form-control none-bgd">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group required-field">
+                            <div class="form-unit">
+                                <span class="saving-unit">Baht</span>
+                                <div class="input-wrap">
+                                    <input type="number" name="input-target" id="input-target" placeholder="CURRENT SAVING" class="form-control label-up none-bgd">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group required-field">
+                            <div class="form-unit">
+                                <span class="saving-unit">%</span>
+                                <div class="input-wrap">
+                                    <input type="number" name="input-target" id="input-target" placeholder="EXPECTED ANNUAL Return" class="form-control label-up none-bgd">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-submit-border">
+                            <button type="submit" name="convert-btn" id="convert-btn" title="Calculate" class="btn-white">
+                                Calculate
+                            </button>
+                        </div>
+                    </form>
+                </div>
+                <div data-financial-result="" class="result hide">
+                    <div class="inner">
+                        <p class="result-text">If you would like to spend<strong data-retire-amount="">15,580* Baht</strong>per month. For the next<strong data-retire-year="">18 year(s)</strong>after retirement, you must have<strong data-retire-total-money="">3,365,210 Baht</strong>Then you have to start saving<strong data-retire-saving-month="">14,141 Baht</strong>per month.</p>
+                        <p data-inflation="" class="text-x-small">Including inflation rate 3% p.a. Return on Investment after retirement rate is assumend to be 3 p.a.</p>
+                    </div>
+                </div>
+            </div>
+            <div id="child-education-plan" class="inner">
+                <div class="inner-container">
+                </div>
+            </div>
+            <div id="tax-planning" class="inner">
+                <div class="inner-container">
+                </div>
+            </div>
+            <div id="home-loan" class="inner">
+                <div class="inner-container">
+                </div>
+            </div>
+        </section>
+    </article>
+    <div class="inner-container">
+        <div class="center-content">
+            <div class="disclaimer">
+                <h5 class="text-x-small">Disclaimer</h5>
+                <p class="text-x-small">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim.</p>
+            </div>
+        </div>
+    </div>
+</div>

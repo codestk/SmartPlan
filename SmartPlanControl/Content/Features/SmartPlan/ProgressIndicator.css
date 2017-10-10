@@ -69,8 +69,9 @@ ul.SteppedProgress {
         background: #23b900;
         color: #FFF;
         color: #fff;
+        /*background-color: #337ab7;
+        border-color: #2e6da4;*/
         background-color: #337ab7;
-        border-color: #2e6da4;
     }
 
         .SteppedProgress li.complete.boxed span:after {
@@ -89,39 +90,36 @@ ul.SteppedProgress {
             cursor: pointer;
         }
 
-.SteppedProgress li.disabled:before {
-     cursor: not-allowed;
-    filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    opacity: .65;
-}
+    .SteppedProgress li.disabled:before {
+        cursor: not-allowed;
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        opacity: .65;
+    }
 
     .SteppedProgress li:before {
-
-       content: counter(step);
-    counter-increment: step;
-    width: 40px;
-    line-height: 40px;
-    display: block;
-    font-size: 16px;
-    color: #FFF;
-    background: gray;
-    border-radius: 25px;
-    margin: 0 auto 10px;
-    position: relative;
-    z-index: 1;
-    color: #333;
-    background-color: #fff;
-    border-color: #ccc;
-    /* cursor: not-allowed; */
-    filter: alpha(opacity=65);
-    -webkit-box-shadow: none;
-    box-shadow: none;
-    opacity: .65;
-    cursor: pointer;
-
-
+        content: counter(step);
+        counter-increment: step;
+        width: 40px;
+        line-height: 40px;
+        display: block;
+        font-size: 16px;
+        color: #FFF;
+        background: gray;
+        border-radius: 25px;
+        margin: 0 auto 10px;
+        position: relative;
+        z-index: 1;
+        color: #333;
+        background-color: #fff;
+        border-color: #ccc;
+        /* cursor: not-allowed; */
+        filter: alpha(opacity=65);
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        /*opacity: .65;*/
+        cursor: pointer;
         /*content: counter(step);
         counter-increment: step;
         width: 30px;
@@ -137,7 +135,7 @@ ul.SteppedProgress {
         color: #333;
         background-color: #fff;
         border-color: #ccc;
-       
+
         filter: alpha(opacity=65);
         -webkit-box-shadow: none;
         box-shadow: none;
@@ -146,18 +144,14 @@ ul.SteppedProgress {
     }
 
     .SteppedProgress li:after {
-
-
-            content: '';
-    width: 100%;
-    height: 1px;
-    background: #ccc;
-    position: absolute;
-    left: -50%;
-    top: 19px;
-    z-index: -1;
-
-
+        content: '';
+        width: 100%;
+        height: 1px;
+        background: #ccc;
+        position: absolute;
+        left: -50%;
+        top: 19px;
+        z-index: -1;
         /*content: '';
         width: 100%;
         height: 2px;
@@ -172,8 +166,13 @@ ul.SteppedProgress {
         content: none;
     }
 
+    .SteppedProgress li.complete {
+        color:#FFF !important;
+    }
+
+
     .SteppedProgress li.complete:before {
-        background: #337ab7;
+        background: #003399;
         color: white;
         opacity: 1 !important;
         filter: alpha(opacity=100) !important;
@@ -181,6 +180,7 @@ ul.SteppedProgress {
 
     .SteppedProgress li.complete:after {
         /*background: rgba(35,185,0,0.6);*/
+        background-color: #4170b0;
     }
 
 ul.SteppedProgress.Vertical {
